@@ -10713,7 +10713,7 @@ h6,
 
 @media (max-width: 767px) {
     .testimonial1-section-area .testimonial-vertical-slider .slider-galeria .testimonial3-slider-content-area .testimonial3-author-area p {
-        font-size: var(--ztc-font-size-font-s20);
+        font-size: var(--ztc-font-size-font-s16);
         line-height: var(--ztc-font-size-font-s34);
     }
 }
