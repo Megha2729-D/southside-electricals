@@ -1898,7 +1898,7 @@ h6,
 }
 
 .service1-section-area .service-auhtor-boxarea:hover .content-area .readmore {
-    color: var(--ztc-text-text-1);
+    color: var(--ztc-text-text-primary);
     transition: all 0.4s;
 }
 
