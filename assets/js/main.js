@@ -150,7 +150,7 @@
         animateIn: 'fadeIn',
         active: true,
         smartSpeed: 2000,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 8000,
         autoplayHoverPause: false,
         responsiveClass: true,
         responsive: {
