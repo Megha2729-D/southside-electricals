@@ -2763,7 +2763,8 @@ h6,
     bottom: 36px;
     margin: 0 auto;
     text-align: center;
-    left: 50%;
+    left: 0;
+    right: 0;
 }
 
 .slider-header-carousel .owl-dots button {
