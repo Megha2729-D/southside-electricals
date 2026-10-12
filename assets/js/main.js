@@ -1,11 +1,10 @@
-;
-(function($) {
+(function ($) {
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         //========== HEADER ACTIVE STRATS ============= //
         if ($("#header").length > 0) {
-            $(window).on("scroll", function(event) {
+            $(window).on("scroll", function (event) {
                 var scroll = $(window).scrollTop();
                 if (scroll < 1) {
                     $(".header-area").removeClass("sticky");
@@ -22,13 +21,13 @@
         function progress_bar() {
             var speed = 30;
             var items = $('.progress_bar').find('.progress_bar_item');
-            items.each(function() {
+            items.each(function () {
                 var item = $(this).find('.progress');
                 var itemValue = item.data('progress');
                 var i = 0;
                 var value = $(this);
 
-                var count = setInterval(function() {
+                var count = setInterval(function () {
                     if (i <= itemValue) {
                         var iStr = i.toString();
                         item.css({
@@ -43,11 +42,11 @@
             });
         }
         //========== PRICING AREA ============= //
-        $("#ce-toggle").click(function(event) {
+        $("#ce-toggle").click(function (event) {
             $(".plan-toggle-wrap").toggleClass("active");
         });
 
-        $("#ce-toggle").change(function() {
+        $("#ce-toggle").change(function () {
             if ($(this).is(":checked")) {
                 $(".tab-content #yearly").hide();
                 $(".tab-content #monthly").show();
@@ -57,11 +56,11 @@
             }
         });
 
-        $("#ce-toggle1").click(function(event) {
+        $("#ce-toggle1").click(function (event) {
             $(".plan-toggle-wrap1").toggleClass("active");
         });
 
-        $("#ce-toggle1").change(function() {
+        $("#ce-toggle1").change(function () {
             if ($(this).is(":checked")) {
                 $(".tab-content #yearly1").hide();
                 $(".tab-content #monthly1").show();
@@ -80,7 +79,7 @@
         progressPath.getBoundingClientRect();
         progressPath.style.transition = progressPath.style.WebkitTransition =
             "stroke-dashoffset 10ms linear";
-        var updateProgress = function() {
+        var updateProgress = function () {
             var scroll = $(window).scrollTop();
             var height = $(document).height() - $(window).height();
             var progress = pathLength - (scroll * pathLength) / height;
@@ -90,14 +89,14 @@
         $(window).scroll(updateProgress);
         var offset = 50;
         var duration = 550;
-        jQuery(window).on("scroll", function() {
+        jQuery(window).on("scroll", function () {
             if (jQuery(this).scrollTop() > offset) {
                 jQuery(".progress-wrap").addClass("active-progress");
             } else {
                 jQuery(".progress-wrap").removeClass("active-progress");
             }
         });
-        jQuery(".progress-wrap").on("click", function(event) {
+        jQuery(".progress-wrap").on("click", function (event) {
             event.preventDefault();
             jQuery("html, body").animate({
                 scrollTop: 0
@@ -356,42 +355,42 @@
         swipeToSlide: true,
         swipe: true,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    autoplay: false,
-                }
-            },
+            breakpoint: 1024,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 600,
-                settings: {
-                    autoplay: false,
-                }
-            },
+        {
+            breakpoint: 600,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 480,
-                settings: {
-                    autoplay: false,
-                    touchMove: false,
-                }
-            },
+        {
+            breakpoint: 480,
+            settings: {
+                autoplay: false,
+                touchMove: false,
+            }
+        },
 
-            {
-                breakpoint: 375,
-                settings: {
-                    autoplay: false,
-                    touchMove: false,
-                }
-            },
+        {
+            breakpoint: 375,
+            settings: {
+                autoplay: false,
+                touchMove: false,
+            }
+        },
 
-            {
-                breakpoint: 320,
-                settings: {
-                    autoplay: false,
-                    touchMove: false,
-                }
-            },
+        {
+            breakpoint: 320,
+            settings: {
+                autoplay: false,
+                touchMove: false,
+            }
+        },
         ]
     });
 
@@ -411,44 +410,44 @@
         swipeToSlide: true,
         swipe: true,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    autoplay: false,
-                }
-            },
+            breakpoint: 1024,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 600,
-                settings: {
-                    autoplay: false,
-                }
-            },
+        {
+            breakpoint: 600,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 480,
-                settings: {
-                    autoplay: false,
-                }
-            },
+        {
+            breakpoint: 480,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 375,
-                settings: {
-                    autoplay: false,
-                }
-            },
+        {
+            breakpoint: 375,
+            settings: {
+                autoplay: false,
+            }
+        },
 
-            {
-                breakpoint: 320,
-                settings: {
-                    autoplay: false,
-                }
-            },
+        {
+            breakpoint: 320,
+            settings: {
+                autoplay: false,
+            }
+        },
         ]
     });
     //========== PRELOADER ============= //
-    $(window).on("load", function(event) {
-        setTimeout(function() {
+    $(window).on("load", function (event) {
+        setTimeout(function () {
             $(".preloader").fadeToggle();
         }, 400);
     });
@@ -466,7 +465,7 @@
 
     function pbmit_title_animation() {
         ScrollTrigger.matchMedia({
-            "(max-width: 375px)": function() {
+            "(max-width: 375px)": function () {
                 var pbmit_var = $('.pbmit-heading, .pbmit-heading-subheading');
                 if (!pbmit_var.length) {
                     return;
