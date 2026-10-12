@@ -12092,7 +12092,7 @@ h6,
     }
 
     .about-hero .container {
-        padding-top: 90px;
+        padding-top: 130px;
         padding-bottom: 60px;
     }
 
@@ -12103,6 +12103,11 @@ h6,
     .about-intro-image {
         margin-bottom: 35px;
     }
+}
+
+.contact-info-single {
+    display: flex;
+    gap: 9px;
 }
 
 #contact-details a {
