@@ -1859,7 +1859,6 @@ h6,
 .service1-section-area {
     position: relative;
     z-index: 1;
-    background: var(--ztc-bg-bg-1);
 }
 
 .service1-section-area .service-header-area {
