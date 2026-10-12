@@ -1,86 +1,82 @@
-;
-(function($) {
+(function ($) {
+    $(document).ready(function () {
 
-    $(document).ready(function() {
-
-        //mobile-wrap
-        const mobile_nav_open = $('.mobile-nav-icon');
-        const mobile_sidebar = $('.mobile-sidebar');
-        const mobile_nav_close = $('.menu-close');
-
-        mobile_nav_open.on('click', function() {
-            mobile_sidebar.addClass('mobile-menu-active');
+        // Open mobile sidebar
+        $(document).on("click", ".mobile-nav-icon", function (e) {
+            e.preventDefault();
+            $(".mobile-sidebar").addClass("mobile-menu-active");
         });
 
-        mobile_nav_close.on('click', function() {
-            mobile_sidebar.removeClass('mobile-menu-active');
+        // Close mobile sidebar
+        $(document).on("click", ".menu-close", function (e) {
+            e.preventDefault();
+            $(".mobile-sidebar").removeClass("mobile-menu-active");
         });
 
-
-
-        //mobile-menus
-        $('.mobile-nav a').each(function() {
-            var href = $(this).attr('href');
-            if (href = '#') {
-                $(this).addClass('hash-nav')
-            } else {
-                $(this).removeClass('hash-nav')
+        // Close sidebar when clicking outside
+        $(document).on("click", function (e) {
+            if (
+                !$(e.target).closest(".mobile-sidebar, .mobile-nav-icon").length
+            ) {
+                $(".mobile-sidebar").removeClass("mobile-menu-active");
             }
         });
 
+        // Mobile submenu initialization
+        $(".mobile-nav").each(function () {
+            const mobileMenu = $(this);
 
-        //mobile-menus-markup
-        $.fn.menumarker = function(options) {
-            mobile_menu = $(this),
-                settings = $.extend({
-                    format: "dropdown",
-                    sticky: false
-                }, options);
+            // Mark parent items that have submenus
+            mobileMenu.find("li").has("ul").addClass("has-sub");
 
+            // Add submenu buttons only once
+            mobileMenu.find("li.has-sub").each(function () {
+                const item = $(this);
 
-            return this.each(function() {
-                mobile_menu.find('li ul').parent().addClass('has-sub');
-                var multiTg = function() {
-                    mobile_menu.find('.hash-nav').parent().addClass('hash-has-sub');
-                    mobile_menu.find(".has-sub").prepend('<span class="submenu-button"><em></em></span>');
-                    mobile_menu.find('.submenu-button').on('click', function() {
-                        $(this).toggleClass('submenu-opened');
-                        if ($(this).siblings('ul').hasClass('open-sub')) {
-                            $(this).siblings('ul').removeClass('open-sub').hide('fadeIn');
-                            $(this).siblings('ul').hide('fadeIn');
-                        } else {
-                            $(this).siblings('ul').addClass('open-sub').hide('fadeIn');
-                            $(this).siblings('ul').slideToggle().show('fadeIn');
-                        }
-                    });
-                };
-
-                if (settings.format === 'multitoggle') multiTg();
-                else mobile_menu.addClass('dropdown');
-                if (settings.sticky === true) mobile_menu.css('position', 'fixed');
-                var resizeFix = function() {
-                    if ($(window).width() > 991) {
-                        mobile_menu.find('ul').show('fadeIn');
-                        mobile_menu.find('ul.sub-menu').hide('fadeIn');
-                    }
-                };
-                resizeFix();
-                return $(window).on('resize', resizeFix);
-
-            })
-
-        }
-
-
-        $('.mobile-nav').menumarker({
-            format: "multitoggle"
+                if (item.children(".submenu-button").length === 0) {
+                    item.prepend(
+                        '<span class="submenu-button" aria-label="Toggle submenu">' +
+                        '<em></em></span>'
+                    );
+                }
+            });
         });
 
+        // Toggle submenus using delegated events
+        $(document).on("click", ".mobile-nav .submenu-button", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
+            const button = $(this);
+            const submenu = button.siblings("ul").first();
+
+            if (!submenu.length) return;
+
+            button.toggleClass("submenu-opened");
+
+            submenu.stop(true, true).slideToggle(250);
+        });
+
+        // Prevent submenu links from triggering parent handlers
+        $(document).on("click", ".mobile-nav a", function (e) {
+            e.stopPropagation();
+
+            const href = $(this).attr("href");
+
+            // Close the sidebar only when navigating to a real page
+            if (href && href !== "#") {
+                $(".mobile-sidebar").removeClass("mobile-menu-active");
+            }
+        });
+
+        // Reset submenu visibility on desktop
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $(".mobile-nav ul").show();
+                $(".mobile-nav ul.sub-menu").hide();
+                $(".mobile-nav .submenu-button").removeClass("submenu-opened");
+                $(".mobile-sidebar").removeClass("mobile-menu-active");
+            }
+        });
     });
-
-
-
-
-
 })(jQuery);

@@ -3489,11 +3489,11 @@ h6,
 }
 
 .mobile-sidebar.mobile-sidebar1 .mobile-nav.mobile-nav1 span.submenu-button:before {
-    background: var(--ztc-text-text-1);
+    background: var(--ztc-text-text-primary);
 }
 
 .mobile-sidebar.mobile-sidebar1 .mobile-nav.mobile-nav1 span.submenu-button::after {
-    background: var(--ztc-text-text-1);
+    background: var(--ztc-text-text-primary);
 }
 
 .mobile-sidebar.mobile-sidebar1 .mobile-nav.mobile-nav1 ul li a {
@@ -6227,7 +6227,8 @@ h6,
     transition: all 0.5s ease-in-out;
     opacity: 1;
     z-index: 9;
-    top: 50px;
+    top: 20px;
+    padding-top: 35px;
     position: absolute;
     transition: all 0.4s;
 }
