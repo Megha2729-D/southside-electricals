@@ -3556,7 +3556,7 @@ h6,
 }
 
 .mobile-sidebar.mobile-sidebar1 .mobile-nav.mobile-nav1 .allmobilesection .social-links-mobile-menu ul li a:hover {
-    background: var(--ztc-text-text-2);
+    background: var(--ztc-text-text-primary);
     transition: all 0.4s;
     color: var(--ztc-text-text-1);
 }
