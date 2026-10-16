@@ -1,4 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --ztc-text-text-1: #fff;
+    --ztc-text-text-primary: #0b2e59;
+    --ztc-text-text-secondary: #ecb11d;
+    --ztc-text-text-3: #060404;
+    --ztc-text-text-4: #5A5454;
+    --ztc-text-text-5: #142637;
+    --ztc-text-text-6: #525455;
+    --ztc-text-text-7: #0A0400;
+    --ztc-text-text-8: #5F5C5A;
+    --ztc-text-text-9: #EC631A;
+    --ztc-text-text-10: #01060E;
+    --ztc-text-text-11: #5A5A5A;
+    --ztc-bg-bg-1: #F3F5F7;
+    --ztc-bg-bg-2: #FAE7E8;
+    --ztc-bg-bg-3: #FFD028;
+    --ztc-bg-bg-4: #2C3C4B;
+    --ztc-bg-bg-5: #E7E9EB;
+    --ztc-bg-bg-6: #B9BEC3;
+    --ztc-bg-bg-7: #EE6400;
+    --ztc-bg-bg-8: #F3E7DE;
+    --ztc-bg-bg-10: #FDF0E5;
+    --ztc-bg-bg-11: #0145AC;
+    --ztc-bg-bg-12: #DBE4F3;
+    --ztc-bg-bg-13: #E6ECF7;
+    --ztc-bg-bg-14: #E7ECF3;
+    --ztc-border-border-1: #f0f0f0;
+    --ztc-border-border-2: #dfdcdc;
+    --ztc-font-size-font-s10: 10px;
+    --ztc-font-size-font-s12: 12px;
+    --ztc-font-size-font-s14: 14px;
+    --ztc-font-size-font-s15: 15px;
+    --ztc-font-size-font-s16: 16px;
+    --ztc-font-size-font-s18: 18px;
+    --ztc-font-size-font-s20: 20px;
+    --ztc-font-size-font-s22: 22px;
+    --ztc-font-size-font-s24: 24px;
+    --ztc-font-size-font-s26: 26px;
+    --ztc-font-size-font-s28: 28px;
+    --ztc-font-size-font-s30: 30px;
+    --ztc-font-size-font-s32: 32px;
+    --ztc-font-size-font-s34: 34px;
+    --ztc-font-size-font-s36: 36px;
+    --ztc-font-size-font-s38: 38px;
+    --ztc-font-size-font-s40: 40px;
+    --ztc-font-size-font-s42: 42px;
+    --ztc-font-size-font-s44: 44px;
+    --ztc-font-size-font-s46: 46px;
+    --ztc-font-size-font-s48: 48px;
+    --ztc-font-size-font-s50: 50px;
+    --ztc-font-size-font-s52: 52px;
+    --ztc-font-size-font-s54: 54px;
+    --ztc-font-size-font-s56: 56px;
+    --ztc-font-size-font-s58: 58px;
+    --ztc-font-size-font-s60: 60px;
+    --ztc-font-size-font-s62: 62px;
+    --ztc-font-size-font-s64: 64px;
+    --ztc-font-size-font-s66: 66px;
+    --ztc-font-size-font-s68: 68px;
+    --ztc-font-size-font-s70: 70px;
+    --ztc-font-size-font-s10: 10px;
+    --ztc-font-size-font-s12: 12px;
+    --ztc-font-size-font-s14: 14px;
+    --ztc-font-size-font-s16: 16px;
+    --ztc-font-size-font-s18: 18px;
+    --ztc-font-size-font-s20: 20px;
+    --ztc-font-size-font-s22: 22px;
+    --ztc-font-size-font-s24: 24px;
+    --ztc-font-size-font-s26: 26px;
+    --ztc-font-size-font-s28: 28px;
+    --ztc-font-size-font-s30: 30px;
+    --ztc-font-size-font-s32: 32px;
+    --ztc-font-size-font-s34: 34px;
+    --ztc-font-size-font-s36: 36px;
+    --ztc-font-size-font-s38: 38px;
+    --ztc-font-size-font-s40: 40px;
+    --ztc-font-size-font-s42: 42px;
+    --ztc-font-size-font-s44: 44px;
+    --ztc-font-size-font-s46: 46px;
+    --ztc-font-size-font-s48: 48px;
+    --ztc-font-size-font-s50: 50px;
+    --ztc-font-size-font-s52: 52px;
+    --ztc-font-size-font-s54: 54px;
+    --ztc-font-size-font-s56: 56px;
+    --ztc-font-size-font-s58: 58px;
+    --ztc-font-size-font-s60: 60px;
+    --ztc-font-size-font-s62: 62px;
+    --ztc-font-size-font-s64: 64px;
+    --ztc-font-size-font-s66: 66px;
+    --ztc-font-size-font-s68: 68px;
+    --ztc-font-size-font-s70: 70px;
+    --ztc-specing-height6: 6px;
+    --ztc-specing-height8: 8px;
+    --ztc-specing-height10: 10px;
+    --ztc-specing-height12: 12px;
+    --ztc-specing-height14: 114px;
+    --ztc-specing-height16: 16px;
+    --ztc-specing-height18: 18px;
+    --ztc-specing-height20: 20px;
+    --ztc-specing-height22: 22px;
+    --ztc-specing-height24: 24px;
+    --ztc-specing-height26: 26px;
+    --ztc-specing-height28: 28px;
+    --ztc-specing-height30: 30px;
+    --ztc-specing-height32: 32px;
+    --ztc-specing-height34: 34px;
+    --ztc-specing-height36: 36px;
+    --ztc-specing-height38: 38px;
+    --ztc-specing-height40: 40px;
+    --ztc-specing-height42: 42px;
+    --ztc-specing-height44: 44px;
+    --ztc-specing-height46: 46px;
+    --ztc-specing-height48: 48px;
+    --ztc-specing-height50: 50px;
+    --ztc-specing-height52: 52px;
+    --ztc-specing-height54: 54px;
+    --ztc-specing-height56: 56px;
+    --ztc-specing-height58: 58px;
+    --ztc-specing-height60: 60px;
+    --ztc-specing-height70: 70px;
+    --ztc-specing-height80: 80px;
+    --ztc-specing-height90: 90px;
+    --ztc-specing-height100: 100px;
+    --ztc-specing-height110: 110px;
+    --ztc-specing-height120: 120px;
+    --ztc-specing-height130: 130px;
+    --ztc-weight-regular: 400;
+    --ztc-weight-medium: 500;
+    --ztc-weight-semibold: 600;
+    --ztc-weight-bold: 700;
+    --ztc-weight-black: 800;
+    --ztc-family-font1: "DM Sans", sans-serif;
+
+    --heading-font: "DM Sans", sans-serif;
+    --body-font: "Nunito Sans", sans-serif;
+}
 
 body,
 html {
@@ -430,142 +568,6 @@ img {
     }
 }
 
-:root {
-    --ztc-text-text-1: #fff;
-    --ztc-text-text-primary: #0b2e59;
-    --ztc-text-text-secondary: #ecb11d;
-    --ztc-text-text-3: #060404;
-    --ztc-text-text-4: #5A5454;
-    --ztc-text-text-5: #142637;
-    --ztc-text-text-6: #525455;
-    --ztc-text-text-7: #0A0400;
-    --ztc-text-text-8: #5F5C5A;
-    --ztc-text-text-9: #EC631A;
-    --ztc-text-text-10: #01060E;
-    --ztc-text-text-11: #5A5A5A;
-    --ztc-bg-bg-1: #F3F5F7;
-    --ztc-bg-bg-2: #FAE7E8;
-    --ztc-bg-bg-3: #FFD028;
-    --ztc-bg-bg-4: #2C3C4B;
-    --ztc-bg-bg-5: #E7E9EB;
-    --ztc-bg-bg-6: #B9BEC3;
-    --ztc-bg-bg-7: #EE6400;
-    --ztc-bg-bg-8: #F3E7DE;
-    --ztc-bg-bg-10: #FDF0E5;
-    --ztc-bg-bg-11: #0145AC;
-    --ztc-bg-bg-12: #DBE4F3;
-    --ztc-bg-bg-13: #E6ECF7;
-    --ztc-bg-bg-14: #E7ECF3;
-    --ztc-border-border-1: #f0f0f0;
-    --ztc-border-border-2: #dfdcdc;
-    --ztc-font-size-font-s10: 10px;
-    --ztc-font-size-font-s12: 12px;
-    --ztc-font-size-font-s14: 14px;
-    --ztc-font-size-font-s16: 16px;
-    --ztc-font-size-font-s18: 18px;
-    --ztc-font-size-font-s20: 20px;
-    --ztc-font-size-font-s22: 22px;
-    --ztc-font-size-font-s24: 24px;
-    --ztc-font-size-font-s26: 26px;
-    --ztc-font-size-font-s28: 28px;
-    --ztc-font-size-font-s30: 30px;
-    --ztc-font-size-font-s32: 32px;
-    --ztc-font-size-font-s34: 34px;
-    --ztc-font-size-font-s36: 36px;
-    --ztc-font-size-font-s38: 38px;
-    --ztc-font-size-font-s40: 40px;
-    --ztc-font-size-font-s42: 42px;
-    --ztc-font-size-font-s44: 44px;
-    --ztc-font-size-font-s46: 46px;
-    --ztc-font-size-font-s48: 48px;
-    --ztc-font-size-font-s50: 50px;
-    --ztc-font-size-font-s52: 52px;
-    --ztc-font-size-font-s54: 54px;
-    --ztc-font-size-font-s56: 56px;
-    --ztc-font-size-font-s58: 58px;
-    --ztc-font-size-font-s60: 60px;
-    --ztc-font-size-font-s62: 62px;
-    --ztc-font-size-font-s64: 64px;
-    --ztc-font-size-font-s66: 66px;
-    --ztc-font-size-font-s68: 68px;
-    --ztc-font-size-font-s70: 70px;
-    --ztc-font-size-font-s10: 10px;
-    --ztc-font-size-font-s12: 12px;
-    --ztc-font-size-font-s14: 14px;
-    --ztc-font-size-font-s16: 16px;
-    --ztc-font-size-font-s18: 18px;
-    --ztc-font-size-font-s20: 20px;
-    --ztc-font-size-font-s22: 22px;
-    --ztc-font-size-font-s24: 24px;
-    --ztc-font-size-font-s26: 26px;
-    --ztc-font-size-font-s28: 28px;
-    --ztc-font-size-font-s30: 30px;
-    --ztc-font-size-font-s32: 32px;
-    --ztc-font-size-font-s34: 34px;
-    --ztc-font-size-font-s36: 36px;
-    --ztc-font-size-font-s38: 38px;
-    --ztc-font-size-font-s40: 40px;
-    --ztc-font-size-font-s42: 42px;
-    --ztc-font-size-font-s44: 44px;
-    --ztc-font-size-font-s46: 46px;
-    --ztc-font-size-font-s48: 48px;
-    --ztc-font-size-font-s50: 50px;
-    --ztc-font-size-font-s52: 52px;
-    --ztc-font-size-font-s54: 54px;
-    --ztc-font-size-font-s56: 56px;
-    --ztc-font-size-font-s58: 58px;
-    --ztc-font-size-font-s60: 60px;
-    --ztc-font-size-font-s62: 62px;
-    --ztc-font-size-font-s64: 64px;
-    --ztc-font-size-font-s66: 66px;
-    --ztc-font-size-font-s68: 68px;
-    --ztc-font-size-font-s70: 70px;
-    --ztc-specing-height6: 6px;
-    --ztc-specing-height8: 8px;
-    --ztc-specing-height10: 10px;
-    --ztc-specing-height12: 12px;
-    --ztc-specing-height14: 114px;
-    --ztc-specing-height16: 16px;
-    --ztc-specing-height18: 18px;
-    --ztc-specing-height20: 20px;
-    --ztc-specing-height22: 22px;
-    --ztc-specing-height24: 24px;
-    --ztc-specing-height26: 26px;
-    --ztc-specing-height28: 28px;
-    --ztc-specing-height30: 30px;
-    --ztc-specing-height32: 32px;
-    --ztc-specing-height34: 34px;
-    --ztc-specing-height36: 36px;
-    --ztc-specing-height38: 38px;
-    --ztc-specing-height40: 40px;
-    --ztc-specing-height42: 42px;
-    --ztc-specing-height44: 44px;
-    --ztc-specing-height46: 46px;
-    --ztc-specing-height48: 48px;
-    --ztc-specing-height50: 50px;
-    --ztc-specing-height52: 52px;
-    --ztc-specing-height54: 54px;
-    --ztc-specing-height56: 56px;
-    --ztc-specing-height58: 58px;
-    --ztc-specing-height60: 60px;
-    --ztc-specing-height70: 70px;
-    --ztc-specing-height80: 80px;
-    --ztc-specing-height90: 90px;
-    --ztc-specing-height100: 100px;
-    --ztc-specing-height110: 110px;
-    --ztc-specing-height120: 120px;
-    --ztc-specing-height130: 130px;
-    --ztc-weight-regular: 400;
-    --ztc-weight-medium: 500;
-    --ztc-weight-semibold: 600;
-    --ztc-weight-bold: 700;
-    --ztc-weight-black: 800;
-    --ztc-family-font1: "DM Sans", sans-serif;
-
-    --heading-font: "DM Sans", sans-serif;
-    --body-font: "Inter", sans-serif;
-}
-
 body {
     font-family: var(--body-font) !important;
     color: var(--text);
@@ -574,7 +576,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: #2e2e2e;
 }
 
@@ -669,7 +671,7 @@ h6,
 
 .heading1 p {
 
-    font-size: var(--ztc-font-size-font-s14);
+    font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s26);
     color: var(--ztc-text-text-1);
     opacity: 0.9 !important;
@@ -717,7 +719,7 @@ h6,
 }
 
 .heading2 p {
-    font-size: var(--ztc-font-size-font-s14);
+    font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s26);
     font-weight: var(--ztc-weight-medium);
     color: var(--ztc-text-text-4);
@@ -1761,7 +1763,7 @@ h6,
 
 .about1-section-area .about-header-area ul li {
 
-    font-size: var(--ztc-font-size-font-s14);
+    font-size: var(--ztc-font-size-font-s16);
     color: var(--ztc-text-text-3);
     line-height: var(--ztc-font-size-font-s18);
     margin-top: 16px;
@@ -6233,7 +6235,7 @@ h6,
 }
 
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li a {
-    font-size: var(--ztc-font-size-font-s14);
+    font-size: var(--ztc-font-size-font-s15);
     font-weight: var(--ztc-weight-medium);
     color: #09305c;
     display: inline-block;
@@ -10735,7 +10737,7 @@ h6,
     padding-left: 16px;
 }
 
-.testimonial1-section-area .testimonial-vertical-slider .slider-galeria .testimonial3-slider-content-area .testimonial1-man-info-area .man-text a {
+.testimonial1-section-area .testimonial-vertical-slider .slider-galeria .testimonial3-slider-content-area .testimonial1-man-info-area .man-text p.name {
 
     font-size: var(--ztc-font-size-font-s24);
     color: var(--ztc-text-text-1);
@@ -12166,5 +12168,58 @@ h6,
 
     .lighting-product-card .card-title {
         font-size: 19px;
+    }
+}
+
+/* Form submission status */
+#formStatus.success {
+    color: #198754;
+}
+
+#formStatus.error,
+.error-message {
+    color: #dc3545;
+}
+
+button.form_loading {
+    position: relative;
+    pointer-events: none;
+    background-color: var(--ztc-text-text-5) !important;
+    color: #ffffff6b !important;
+    cursor: not-allowed !important;
+}
+
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled,
+button:disabled {
+    cursor: not-allowed !important;
+}
+
+button.form_loading::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(360deg);
     }
 }
